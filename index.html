@@ -22,15 +22,31 @@
 			$(function(){
 				console.log( "ready!" );
 				// Reset divs
-			$('#film_list').text('');
-			$('#film_content').text('');
-				// the JSON file being requested can be replaced with an API
+			$("#film_list").text("");
+			$("#film_content").text("");
+				// the JSON file being requested can be replaced with a REST service
 	$.getJSON("json/json.json",{}, function(json){
              $.each(json, function(i, value){
-            $("#film_list").append("<li>" + value.filmTitle + "</li>");
+            $("#film_list").append("<li class="+value.filmClick+"itWorks>" + value.filmTitle + "</li>");
+				 // was here..
+		
+				 
+				 $(function(){
+					 var $list = $("."+value.filmClick+"itWorks");
+					 
+					 $list.on("click", function() {
+						 console.log( "worked?!" );
+			$("#film_content").text("");
+						 
+     $("#film_content").append("<p>" + value.filmTitle + value.filmImage + value.filmDesc + "</p>");
+						 });
+});	
+        });
+		
+		// here?
         });
         });
-        });
+			
 	
 		</script>
 	<ol id="film_list">
