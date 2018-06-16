@@ -1,3 +1,24 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+body {margin: 0; padding: 0; height: 100%;}
+
+.ui-page { background-color: #DCE9F6;}
+
+div#wrapper {position: static; width: auto; margin: auto; min-width: 1008px;}
+div#content {width: 1008px; margin: auto;}
+
+h1 {letter-spacing: 4px;}
+
+h2 {float: right; width: 768px;}
+
+img.filmImg {float: left; margin: 0 20px 0 0; width: 180px; height: 262px; border: none;}
+
+p {float: left; width: 768px;}
+
+li {color: #154FB3; cursor: pointer;}
+
+div#film_content {background: #CDDBE9; display: inline-block; float: left; position: relative; clear:none;}
+
+div.flim_ext { padding: 20px; margin-bottom: 20px;}

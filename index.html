@@ -2,10 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Top 10 Film Info</title>
-	<link href="css/page.css" rel="stylesheet" type="text/css" />
 	<!-- http://jquerymobile.com/download/ -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" type="text/css" />
+	
+	
+	<link href="css/page.css" rel="stylesheet" type="text/css" />
 	
 	<!-- http://jquerymobile.com/download/ -->
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -13,6 +16,8 @@
 </head>
 
 <body>
+	<div id="wrapper">
+		<div id="content">
 	<h1><span class="page_title"><em>Top 10</em></span> <span class="page_title">Film</span> <span class="page_title">Info</span></h1>
 	
 	
@@ -37,8 +42,8 @@
 					 $list.on("click", function() {
 						 console.log( "worked?!" );
 			$("#film_content").text("");
-						 
-     $("#film_content").append("<p>" + value.filmTitle + value.filmImage + value.filmDesc + "</p>");
+					$("#film_content").addClass("flim_ext");	 
+     $("#film_content").append("<h2>" + value.filmTitle + "</h2>" + "<img src="+value.filmImage+" border=0 alt="+value.filmImage+" title="+value.filmImage+" class=filmImg />" + "<p>" + value.filmDesc + "</p>");
 						 });
 });	
         });
@@ -52,10 +57,10 @@
 	<ol id="film_list">
 	</ol>
 	
-	<div id="film_content">
+	<div id="film_content" class="">
 	</div>
 	
-	
-	
+		</div>
+	</div>
 </body>
 </html>
