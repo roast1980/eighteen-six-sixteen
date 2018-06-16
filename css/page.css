@@ -1,24 +1,45 @@
 @charset "UTF-8";
 /* CSS Document */
 
+* {background-color: #DCE9F6!important;}
 
 body {margin: 0; padding: 0; height: 100%;}
 
 .ui-page { background-color: #DCE9F6;}
 
-div#wrapper {position: static; width: auto; margin: auto; min-width: 1008px;}
-div#content {width: 1008px; margin: auto;}
+.ui-mobile, .ui-page-active, body.ui-mobile-viewport, div.ui-mobile-viewport {overflow-x: visible!important; overflow-y: visible!important;}
 
-h1 {letter-spacing: 4px;}
+div#wrapper {margin: auto; max-width: 1008px; width: 100%}
+div#content {max-width: 1008px; width:100%; margin: auto;}
 
-h2 {float: right; width: 768px;}
+h1 {letter-spacing: 5px; padding: 0 10px;}
+
+h2 {float: right; max-width: 728px; width: 100%; background-color: inherit!important; letter-spacing: 5px;}
 
 img.filmImg {float: left; margin: 0 20px 0 0; width: 180px; height: 262px; border: none;}
 
-p {float: left; width: 768px;}
+p {float: left; max-width: 570px; width: auto; background-color: inherit!important;}
 
 li {color: #154FB3; cursor: pointer;}
 
-div#film_content {background: #CDDBE9; display: inline-block; float: left; position: relative; clear:none;}
+div#film_content {background: #CDDBE9!important; display: inline-block; float: left; position: relative; clear:none;}
 
-div.flim_ext { padding: 20px; margin-bottom: 20px;}
+div.flim_ext { padding: 20px; margin: 0 20px 20px 20px;}
+
+@media only screen and (max-width: 1022px) {
+	
+h2 {max-width: 100%; text-align: center;}	
+	
+}
+
+@media only screen and (max-width: 865px) {	
+	
+	p {max-width: 100%; width:100%;}
+	img.filmImg {float: none; display: block; margin: 0 auto; }
+	
+}
+
+@media only screen and (max-width: 480px) {	
+	h1 {text-align: center;}
+	span.page_title {width: 100%; display: block; clear: both;}
+}

@@ -18,14 +18,13 @@
 <body>
 	<div id="wrapper">
 		<div id="content">
-	<h1><span class="page_title"><em>Top 10</em></span> <span class="page_title">Film</span> <span class="page_title">Info</span></h1>
+	<h1><span class="page_title"><em>Top 10</em></span> <span class="page_title">Film Info</span></h1>
 	
 	
 	<!-- inspiration from https://www.imdb.com/chart/top -->
 	
 		<script>
 			$(function(){
-				console.log( "ready!" );
 				// Reset divs
 			$("#film_list").text("");
 			$("#film_content").text("");
@@ -33,22 +32,16 @@
 	$.getJSON("json/json.json",{}, function(json){
              $.each(json, function(i, value){
             $("#film_list").append("<li class="+value.filmClick+"itWorks>" + value.filmTitle + "</li>");
-				 // was here..
-		
-				 
 				 $(function(){
 					 var $list = $("."+value.filmClick+"itWorks");
 					 
 					 $list.on("click", function() {
-						 console.log( "worked?!" );
 			$("#film_content").text("");
 					$("#film_content").addClass("flim_ext");	 
      $("#film_content").append("<h2>" + value.filmTitle + "</h2>" + "<img src="+value.filmImage+" border=0 alt="+value.filmImage+" title="+value.filmImage+" class=filmImg />" + "<p>" + value.filmDesc + "</p>");
 						 });
 });	
         });
-		
-		// here?
         });
         });
 			
