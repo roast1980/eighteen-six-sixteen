@@ -3,10 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <title>Top 10 Film Info</title>
+	<link href="css/page.css" rel="stylesheet" type="text/css" />
+	<!-- http://jquerymobile.com/download/ -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" type="text/css" />
+	
+	<!-- http://jquerymobile.com/download/ -->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <body>
+	<h1><span class="page_title"><em>Top 10</em></span> <span class="page_title">Film</span> <span class="page_title">Info</span></h1>
 	
+	
+	<!-- inspiration from https://www.imdb.com/chart/top -->
+	
+		<script>
+			$(function(){
+				console.log( "ready!" );
+				// Reset divs
+			$('#film_list').text('');
+			$('#film_content').text('');
+				// the JSON file being requested can be replaced with an API
+	$.getJSON("json/json.json",{}, function(json){
+             $.each(json, function(i, value){
+            $("#film_list").append("<li>" + value.filmTitle + "</li>");
+        });
+        });
+        });
+	
+		</script>
+	<ol id="film_list">
+	</ol>
+	
+	<div id="film_content">
+	</div>
 	
 	
 	
