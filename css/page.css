@@ -22,6 +22,8 @@ p {float: left; max-width: 570px; width: auto; background-color: inherit!importa
 
 li {color: #154FB3; cursor: pointer;}
 
+li#itCurrent {color: #333; cursor: pointer; text-decoration-line: underline;}
+
 div#film_content {background: #CDDBE9!important; display: inline-block; float: left; position: relative; clear:none;}
 
 div.flim_ext { padding: 20px; margin: 0 20px 20px 20px;}
