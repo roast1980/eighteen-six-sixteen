@@ -1,1 +1,21 @@
-// JSON Document
+[
+    { "filmClick":"swashank", "filmTitle":"The Shawshank Redemption", "filmImage":"https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg", "filmDesc":"Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency." },
+	
+    { "filmClick":"godf", "filmTitle":"The Godfather", "filmImage":"https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg", "filmDesc":"The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son." },
+	
+    { "filmClick":"godf2", "filmTitle":"The Godfather: Part II", "filmImage":"https://m.media-amazon.com/images/M/MV5BMWMwMGQzZTItY2JlNC00OWZiLWIyMDctNDk2ZDQ2YjRjMWQ0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg", "filmDesc":"The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate." },
+	
+    { "filmClick":"darkknight", "filmTitle":"The Dark Knight", "filmImage":"https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg", "filmDesc":"When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham. The Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice." },
+	
+    { "filmClick":"angry", "filmTitle":"12 Angry Men", "filmImage":"https://m.media-amazon.com/images/M/MV5BMWU4N2FjNzYtNTVkNC00NzQ0LTg0MjAtYTJlMjFhNGUxZDFmXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg", "filmDesc":"A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence." },
+	
+    { "filmClick":"schindler", "filmTitle":"Schindler's List", "filmImage":"https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg", "filmDesc":"In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazi Germans." },
+	
+    { "filmClick":"lord", "filmTitle":"The Lord of the Rings: The Return of the King", "filmImage":"https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg", "filmDesc":"Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring." },
+	
+    { "filmClick":"pulp", "filmTitle":"Pulp Fiction", "filmImage":"https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR1,0,182,268_AL_.jpg", "filmDesc":"The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption." },
+	
+    { "filmClick":"goodbad", "filmTitle":"The Good, the Bad and the Ugly", "filmImage":"https://m.media-amazon.com/images/M/MV5BOTQ5NDI3MTI4MF5BMl5BanBnXkFtZTgwNDQ4ODE5MDE@._V1_UX182_CR0,0,182,268_AL_.jpg", "filmDesc":"A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery." },
+	
+    { "filmClick":"fight", "filmTitle":"Fight Club", "filmImage":"https://m.media-amazon.com/images/M/MV5BMjM1NzUwMjgtZDMyZC00OTdmLWE2YjYtMzQxOTg5MDY4MTQzXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg", "filmDesc":"An insomniac office worker, looking for a way to change his life, crosses paths with a devil-may-care soapmaker, forming an underground fight club that evolves into something much, much more." }
+]
